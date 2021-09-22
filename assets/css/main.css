@@ -1,0 +1,23 @@
+body {
+    background-color: #181818;
+    color: #FAFAFA;
+}
+
+.page-enter-active,
+.page-leave-active {
+  transition: all 0.6s ease;
+  transition-delay: 200ms;
+}
+.page-enter,
+.page-leave-active {
+  opacity: 0;
+  transform: translateX(-100%);
+}
+@media (min-width: 1024px) {
+  .page-enter,
+  .page-leave-active {
+    transition-delay: 0ms;
+    opacity: 0;
+    transform: scale(0.9);
+  }
+}
